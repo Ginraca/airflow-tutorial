@@ -1,0 +1,23 @@
+[2022-11-02T13:42:18.193+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: dag_with_taskflow_example.get_date manual__2022-11-02T06:42:13.244538+00:00 [queued]>
+[2022-11-02T13:42:18.199+0700] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: dag_with_taskflow_example.get_date manual__2022-11-02T06:42:13.244538+00:00 [queued]>
+[2022-11-02T13:42:18.199+0700] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-02T13:42:18.199+0700] {taskinstance.py:1363} INFO - Starting attempt 1 of 6
+[2022-11-02T13:42:18.199+0700] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-02T13:42:18.208+0700] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): get_date> on 2022-11-02 06:42:13.244538+00:00
+[2022-11-02T13:42:18.210+0700] {standard_task_runner.py:55} INFO - Started process 55202 to run task
+[2022-11-02T13:42:18.212+0700] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_taskflow_example', 'get_date', 'manual__2022-11-02T06:42:13.244538+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_taskflow.py', '--cfg-path', '/tmp/tmphg6ujqc4']
+[2022-11-02T13:42:18.213+0700] {standard_task_runner.py:83} INFO - Job 41: Subtask get_date
+[2022-11-02T13:42:18.244+0700] {task_command.py:376} INFO - Running <TaskInstance: dag_with_taskflow_example.get_date manual__2022-11-02T06:42:13.244538+00:00 [running]> on host ginraca-VirtualBox
+[2022-11-02T13:42:18.283+0700] {taskinstance.py:1590} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=dag_with_taskflow_example
+AIRFLOW_CTX_TASK_ID=get_date
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-02T06:42:13.244538+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-02T06:42:13.244538+00:00
+[2022-11-02T13:42:18.284+0700] {python.py:177} INFO - Done. Returned value was: "2022-11-02 13:42:18.284115"
+[2022-11-02T13:42:18.295+0700] {taskinstance.py:1401} INFO - Marking task as SUCCESS. dag_id=dag_with_taskflow_example, task_id=get_date, execution_date=20221102T064213, start_date=20221102T064218, end_date=20221102T064218
+[2022-11-02T13:42:18.344+0700] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-02T13:42:18.357+0700] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
